@@ -17,8 +17,10 @@ This is a simple Go web application that serves a static HTML page along with in
 ```docker run -p 3000:3000 yuni2/sample-webapp```
 
 ### Build and Run Locally
+```bash
 go build -o webapp main.go
 ./webapp
+```
 
 ## Usage
 Once the application is running, open your web browser and navigate to http://localhost:3000. You will see a simple HTML page displaying information about the app's port and environment.
