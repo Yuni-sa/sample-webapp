@@ -3,24 +3,28 @@ services:
   webapp1:
     image: yuni2/sample-webapp:latest
     environment:
+      - PORT=8081
       - ENV=test
     ports:
-      - "8081:3000"
+      - "8081:8081"
   webapp2:
     image: yuni2/sample-webapp:latest
     environment:
+      - PORT=8082
       - ENV=dev
     ports:
-      - "8082:3000"
+      - "8082:8082"
   webapp3:
     image: yuni2/sample-webapp:latest
     environment:
+      - PORT=8083
       - ENV=preprod
     ports:
-      - "8083:3000"
+      - "8083:8083"
   webapp4:
     image: yuni2/sample-webapp:latest
     environment:
+      - PORT=8084
       - ENV=prod
     ports:
-      - "8084:3000"
+      - "8084:8084"
